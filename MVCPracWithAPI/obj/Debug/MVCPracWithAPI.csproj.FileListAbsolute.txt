@@ -1,0 +1,84 @@
+C:\Users\AHMAD\Desktop\test\assignment6\asp.net-web-api-learn-in-urdu-master\Part 1- 4 Code\WebAPIPrac\MVCPracWithAPI\bin\MVCPracWithAPI.dll.config
+C:\Users\AHMAD\Desktop\test\assignment6\asp.net-web-api-learn-in-urdu-master\Part 1- 4 Code\WebAPIPrac\MVCPracWithAPI\bin\MVCPracWithAPI.dll
+C:\Users\AHMAD\Desktop\test\assignment6\asp.net-web-api-learn-in-urdu-master\Part 1- 4 Code\WebAPIPrac\MVCPracWithAPI\bin\MVCPracWithAPI.pdb
+C:\Users\AHMAD\Desktop\test\assignment6\asp.net-web-api-learn-in-urdu-master\Part 1- 4 Code\WebAPIPrac\MVCPracWithAPI\bin\Antlr3.Runtime.dll
+C:\Users\AHMAD\Desktop\test\assignment6\asp.net-web-api-learn-in-urdu-master\Part 1- 4 Code\WebAPIPrac\MVCPracWithAPI\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\AHMAD\Desktop\test\assignment6\asp.net-web-api-learn-in-urdu-master\Part 1- 4 Code\WebAPIPrac\MVCPracWithAPI\bin\Newtonsoft.Json.dll
+C:\Users\AHMAD\Desktop\test\assignment6\asp.net-web-api-learn-in-urdu-master\Part 1- 4 Code\WebAPIPrac\MVCPracWithAPI\bin\System.Web.Helpers.dll
+C:\Users\AHMAD\Desktop\test\assignment6\asp.net-web-api-learn-in-urdu-master\Part 1- 4 Code\WebAPIPrac\MVCPracWithAPI\bin\System.Web.Mvc.dll
+C:\Users\AHMAD\Desktop\test\assignment6\asp.net-web-api-learn-in-urdu-master\Part 1- 4 Code\WebAPIPrac\MVCPracWithAPI\bin\System.Web.Optimization.dll
+C:\Users\AHMAD\Desktop\test\assignment6\asp.net-web-api-learn-in-urdu-master\Part 1- 4 Code\WebAPIPrac\MVCPracWithAPI\bin\System.Web.Razor.dll
+C:\Users\AHMAD\Desktop\test\assignment6\asp.net-web-api-learn-in-urdu-master\Part 1- 4 Code\WebAPIPrac\MVCPracWithAPI\bin\System.Web.WebPages.Deployment.dll
+C:\Users\AHMAD\Desktop\test\assignment6\asp.net-web-api-learn-in-urdu-master\Part 1- 4 Code\WebAPIPrac\MVCPracWithAPI\bin\System.Web.WebPages.dll
+C:\Users\AHMAD\Desktop\test\assignment6\asp.net-web-api-learn-in-urdu-master\Part 1- 4 Code\WebAPIPrac\MVCPracWithAPI\bin\System.Web.WebPages.Razor.dll
+C:\Users\AHMAD\Desktop\test\assignment6\asp.net-web-api-learn-in-urdu-master\Part 1- 4 Code\WebAPIPrac\MVCPracWithAPI\bin\WebGrease.dll
+C:\Users\AHMAD\Desktop\test\assignment6\asp.net-web-api-learn-in-urdu-master\Part 1- 4 Code\WebAPIPrac\MVCPracWithAPI\bin\System.Web.Helpers.xml
+C:\Users\AHMAD\Desktop\test\assignment6\asp.net-web-api-learn-in-urdu-master\Part 1- 4 Code\WebAPIPrac\MVCPracWithAPI\bin\System.Web.Mvc.xml
+C:\Users\AHMAD\Desktop\test\assignment6\asp.net-web-api-learn-in-urdu-master\Part 1- 4 Code\WebAPIPrac\MVCPracWithAPI\bin\System.Web.Optimization.xml
+C:\Users\AHMAD\Desktop\test\assignment6\asp.net-web-api-learn-in-urdu-master\Part 1- 4 Code\WebAPIPrac\MVCPracWithAPI\bin\System.Web.Razor.xml
+C:\Users\AHMAD\Desktop\test\assignment6\asp.net-web-api-learn-in-urdu-master\Part 1- 4 Code\WebAPIPrac\MVCPracWithAPI\bin\System.Web.WebPages.xml
+C:\Users\AHMAD\Desktop\test\assignment6\asp.net-web-api-learn-in-urdu-master\Part 1- 4 Code\WebAPIPrac\MVCPracWithAPI\bin\System.Web.WebPages.Deployment.xml
+C:\Users\AHMAD\Desktop\test\assignment6\asp.net-web-api-learn-in-urdu-master\Part 1- 4 Code\WebAPIPrac\MVCPracWithAPI\bin\System.Web.WebPages.Razor.xml
+C:\Users\AHMAD\Desktop\test\assignment6\asp.net-web-api-learn-in-urdu-master\Part 1- 4 Code\WebAPIPrac\MVCPracWithAPI\bin\Newtonsoft.Json.xml
+C:\Users\AHMAD\Desktop\test\assignment6\asp.net-web-api-learn-in-urdu-master\Part 1- 4 Code\WebAPIPrac\MVCPracWithAPI\bin\Antlr3.Runtime.pdb
+C:\Users\AHMAD\Desktop\test\assignment6\asp.net-web-api-learn-in-urdu-master\Part 1- 4 Code\WebAPIPrac\MVCPracWithAPI\obj\Debug\MVCPracWithAPI.csproj.AssemblyReference.cache
+C:\Users\AHMAD\Desktop\test\assignment6\asp.net-web-api-learn-in-urdu-master\Part 1- 4 Code\WebAPIPrac\MVCPracWithAPI\obj\Debug\MVCPracWithAPI.csproj.CoreCompileInputs.cache
+C:\Users\AHMAD\Desktop\test\assignment6\asp.net-web-api-learn-in-urdu-master\Part 1- 4 Code\WebAPIPrac\MVCPracWithAPI\obj\Debug\MVCPracWithAPI.csproj.CopyComplete
+C:\Users\AHMAD\Desktop\test\assignment6\asp.net-web-api-learn-in-urdu-master\Part 1- 4 Code\WebAPIPrac\MVCPracWithAPI\obj\Debug\MVCPracWithAPI.dll
+C:\Users\AHMAD\Desktop\test\assignment6\asp.net-web-api-learn-in-urdu-master\Part 1- 4 Code\WebAPIPrac\MVCPracWithAPI\obj\Debug\MVCPracWithAPI.pdb
+C:\Users\AHMAD\Desktop\test\assignment6\asp.net-web-api-learn-in-urdu-master\Part 1- 4 Code\New folder (2)\WebAPIPrac\MVCPracWithAPI\bin\MVCPracWithAPI.dll.config
+C:\Users\AHMAD\Desktop\test\assignment6\asp.net-web-api-learn-in-urdu-master\Part 1- 4 Code\New folder (2)\WebAPIPrac\MVCPracWithAPI\bin\MVCPracWithAPI.dll
+C:\Users\AHMAD\Desktop\test\assignment6\asp.net-web-api-learn-in-urdu-master\Part 1- 4 Code\New folder (2)\WebAPIPrac\MVCPracWithAPI\bin\MVCPracWithAPI.pdb
+C:\Users\AHMAD\Desktop\test\assignment6\asp.net-web-api-learn-in-urdu-master\Part 1- 4 Code\New folder (2)\WebAPIPrac\MVCPracWithAPI\bin\Antlr3.Runtime.dll
+C:\Users\AHMAD\Desktop\test\assignment6\asp.net-web-api-learn-in-urdu-master\Part 1- 4 Code\New folder (2)\WebAPIPrac\MVCPracWithAPI\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\AHMAD\Desktop\test\assignment6\asp.net-web-api-learn-in-urdu-master\Part 1- 4 Code\New folder (2)\WebAPIPrac\MVCPracWithAPI\bin\Newtonsoft.Json.dll
+C:\Users\AHMAD\Desktop\test\assignment6\asp.net-web-api-learn-in-urdu-master\Part 1- 4 Code\New folder (2)\WebAPIPrac\MVCPracWithAPI\bin\System.Web.Helpers.dll
+C:\Users\AHMAD\Desktop\test\assignment6\asp.net-web-api-learn-in-urdu-master\Part 1- 4 Code\New folder (2)\WebAPIPrac\MVCPracWithAPI\bin\System.Web.Mvc.dll
+C:\Users\AHMAD\Desktop\test\assignment6\asp.net-web-api-learn-in-urdu-master\Part 1- 4 Code\New folder (2)\WebAPIPrac\MVCPracWithAPI\bin\System.Web.Optimization.dll
+C:\Users\AHMAD\Desktop\test\assignment6\asp.net-web-api-learn-in-urdu-master\Part 1- 4 Code\New folder (2)\WebAPIPrac\MVCPracWithAPI\bin\System.Web.Razor.dll
+C:\Users\AHMAD\Desktop\test\assignment6\asp.net-web-api-learn-in-urdu-master\Part 1- 4 Code\New folder (2)\WebAPIPrac\MVCPracWithAPI\bin\System.Web.WebPages.Deployment.dll
+C:\Users\AHMAD\Desktop\test\assignment6\asp.net-web-api-learn-in-urdu-master\Part 1- 4 Code\New folder (2)\WebAPIPrac\MVCPracWithAPI\bin\System.Web.WebPages.dll
+C:\Users\AHMAD\Desktop\test\assignment6\asp.net-web-api-learn-in-urdu-master\Part 1- 4 Code\New folder (2)\WebAPIPrac\MVCPracWithAPI\bin\System.Web.WebPages.Razor.dll
+C:\Users\AHMAD\Desktop\test\assignment6\asp.net-web-api-learn-in-urdu-master\Part 1- 4 Code\New folder (2)\WebAPIPrac\MVCPracWithAPI\bin\WebGrease.dll
+C:\Users\AHMAD\Desktop\test\assignment6\asp.net-web-api-learn-in-urdu-master\Part 1- 4 Code\New folder (2)\WebAPIPrac\MVCPracWithAPI\bin\System.Web.Helpers.xml
+C:\Users\AHMAD\Desktop\test\assignment6\asp.net-web-api-learn-in-urdu-master\Part 1- 4 Code\New folder (2)\WebAPIPrac\MVCPracWithAPI\bin\System.Web.Mvc.xml
+C:\Users\AHMAD\Desktop\test\assignment6\asp.net-web-api-learn-in-urdu-master\Part 1- 4 Code\New folder (2)\WebAPIPrac\MVCPracWithAPI\bin\System.Web.Optimization.xml
+C:\Users\AHMAD\Desktop\test\assignment6\asp.net-web-api-learn-in-urdu-master\Part 1- 4 Code\New folder (2)\WebAPIPrac\MVCPracWithAPI\bin\System.Web.Razor.xml
+C:\Users\AHMAD\Desktop\test\assignment6\asp.net-web-api-learn-in-urdu-master\Part 1- 4 Code\New folder (2)\WebAPIPrac\MVCPracWithAPI\bin\System.Web.WebPages.xml
+C:\Users\AHMAD\Desktop\test\assignment6\asp.net-web-api-learn-in-urdu-master\Part 1- 4 Code\New folder (2)\WebAPIPrac\MVCPracWithAPI\bin\System.Web.WebPages.Deployment.xml
+C:\Users\AHMAD\Desktop\test\assignment6\asp.net-web-api-learn-in-urdu-master\Part 1- 4 Code\New folder (2)\WebAPIPrac\MVCPracWithAPI\bin\System.Web.WebPages.Razor.xml
+C:\Users\AHMAD\Desktop\test\assignment6\asp.net-web-api-learn-in-urdu-master\Part 1- 4 Code\New folder (2)\WebAPIPrac\MVCPracWithAPI\bin\Newtonsoft.Json.xml
+C:\Users\AHMAD\Desktop\test\assignment6\asp.net-web-api-learn-in-urdu-master\Part 1- 4 Code\New folder (2)\WebAPIPrac\MVCPracWithAPI\bin\Antlr3.Runtime.pdb
+C:\Users\AHMAD\Desktop\test\assignment6\asp.net-web-api-learn-in-urdu-master\Part 1- 4 Code\New folder (2)\WebAPIPrac\MVCPracWithAPI\obj\Debug\MVCPracWithAPI.csproj.AssemblyReference.cache
+C:\Users\AHMAD\Desktop\test\assignment6\asp.net-web-api-learn-in-urdu-master\Part 1- 4 Code\New folder (2)\WebAPIPrac\MVCPracWithAPI\obj\Debug\MVCPracWithAPI.csproj.CoreCompileInputs.cache
+C:\Users\AHMAD\Desktop\test\assignment6\asp.net-web-api-learn-in-urdu-master\Part 1- 4 Code\New folder (2)\WebAPIPrac\MVCPracWithAPI\obj\Debug\MVCPracWithAPI.csproj.CopyComplete
+C:\Users\AHMAD\Desktop\test\assignment6\asp.net-web-api-learn-in-urdu-master\Part 1- 4 Code\New folder (2)\WebAPIPrac\MVCPracWithAPI\obj\Debug\MVCPracWithAPI.dll
+C:\Users\AHMAD\Desktop\test\assignment6\asp.net-web-api-learn-in-urdu-master\Part 1- 4 Code\New folder (2)\WebAPIPrac\MVCPracWithAPI\obj\Debug\MVCPracWithAPI.pdb
+C:\Users\4382\Desktop\New folder (2)\WEB_API_UI\WebAPIPrac\MVCPracWithAPI\bin\MVCPracWithAPI.dll.config
+C:\Users\4382\Desktop\New folder (2)\WEB_API_UI\WebAPIPrac\MVCPracWithAPI\bin\MVCPracWithAPI.dll
+C:\Users\4382\Desktop\New folder (2)\WEB_API_UI\WebAPIPrac\MVCPracWithAPI\bin\MVCPracWithAPI.pdb
+C:\Users\4382\Desktop\New folder (2)\WEB_API_UI\WebAPIPrac\MVCPracWithAPI\bin\Antlr3.Runtime.dll
+C:\Users\4382\Desktop\New folder (2)\WEB_API_UI\WebAPIPrac\MVCPracWithAPI\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\4382\Desktop\New folder (2)\WEB_API_UI\WebAPIPrac\MVCPracWithAPI\bin\Newtonsoft.Json.dll
+C:\Users\4382\Desktop\New folder (2)\WEB_API_UI\WebAPIPrac\MVCPracWithAPI\bin\System.Web.Helpers.dll
+C:\Users\4382\Desktop\New folder (2)\WEB_API_UI\WebAPIPrac\MVCPracWithAPI\bin\System.Web.Mvc.dll
+C:\Users\4382\Desktop\New folder (2)\WEB_API_UI\WebAPIPrac\MVCPracWithAPI\bin\System.Web.Optimization.dll
+C:\Users\4382\Desktop\New folder (2)\WEB_API_UI\WebAPIPrac\MVCPracWithAPI\bin\System.Web.Razor.dll
+C:\Users\4382\Desktop\New folder (2)\WEB_API_UI\WebAPIPrac\MVCPracWithAPI\bin\System.Web.WebPages.Deployment.dll
+C:\Users\4382\Desktop\New folder (2)\WEB_API_UI\WebAPIPrac\MVCPracWithAPI\bin\System.Web.WebPages.dll
+C:\Users\4382\Desktop\New folder (2)\WEB_API_UI\WebAPIPrac\MVCPracWithAPI\bin\System.Web.WebPages.Razor.dll
+C:\Users\4382\Desktop\New folder (2)\WEB_API_UI\WebAPIPrac\MVCPracWithAPI\bin\WebGrease.dll
+C:\Users\4382\Desktop\New folder (2)\WEB_API_UI\WebAPIPrac\MVCPracWithAPI\bin\System.Web.Helpers.xml
+C:\Users\4382\Desktop\New folder (2)\WEB_API_UI\WebAPIPrac\MVCPracWithAPI\bin\System.Web.Mvc.xml
+C:\Users\4382\Desktop\New folder (2)\WEB_API_UI\WebAPIPrac\MVCPracWithAPI\bin\System.Web.Optimization.xml
+C:\Users\4382\Desktop\New folder (2)\WEB_API_UI\WebAPIPrac\MVCPracWithAPI\bin\System.Web.Razor.xml
+C:\Users\4382\Desktop\New folder (2)\WEB_API_UI\WebAPIPrac\MVCPracWithAPI\bin\System.Web.WebPages.xml
+C:\Users\4382\Desktop\New folder (2)\WEB_API_UI\WebAPIPrac\MVCPracWithAPI\bin\System.Web.WebPages.Deployment.xml
+C:\Users\4382\Desktop\New folder (2)\WEB_API_UI\WebAPIPrac\MVCPracWithAPI\bin\System.Web.WebPages.Razor.xml
+C:\Users\4382\Desktop\New folder (2)\WEB_API_UI\WebAPIPrac\MVCPracWithAPI\bin\Newtonsoft.Json.xml
+C:\Users\4382\Desktop\New folder (2)\WEB_API_UI\WebAPIPrac\MVCPracWithAPI\bin\Antlr3.Runtime.pdb
+C:\Users\4382\Desktop\New folder (2)\WEB_API_UI\WebAPIPrac\MVCPracWithAPI\obj\Debug\MVCPracWithAPI.csproj.AssemblyReference.cache
+C:\Users\4382\Desktop\New folder (2)\WEB_API_UI\WebAPIPrac\MVCPracWithAPI\obj\Debug\MVCPracWithAPI.csproj.CoreCompileInputs.cache
+C:\Users\4382\Desktop\New folder (2)\WEB_API_UI\WebAPIPrac\MVCPracWithAPI\obj\Debug\MVCPracWithAPI.csproj.CopyComplete
+C:\Users\4382\Desktop\New folder (2)\WEB_API_UI\WebAPIPrac\MVCPracWithAPI\obj\Debug\MVCPracWithAPI.dll
+C:\Users\4382\Desktop\New folder (2)\WEB_API_UI\WebAPIPrac\MVCPracWithAPI\obj\Debug\MVCPracWithAPI.pdb

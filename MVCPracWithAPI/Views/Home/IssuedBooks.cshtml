@@ -1,0 +1,175 @@
+﻿@{ ViewBag.Title = "Issued Books"; }
+
+
+<div class="container">
+    <h2>Issued Books Record</h2>
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" onclick="ClearForm();">Issue New Book</button>
+    <p></p>
+    <table class="table table-bordered table-hover">
+        <thead>
+            <tr>
+                <th>BookID</th>
+                <th>UserID</th>
+               
+                <th>Return Book</th>
+
+            </tr>
+        </thead>
+        <tbody id="tbody"></tbody>
+    </table>
+</div>
+
+<div class="form-inline">
+
+    <label>Calculate Fine:     </label>
+    <label>User ID</label>
+    <input type="text" id="fuserid">
+    <label>Book ID</label>
+    <input type="text" id="fbookid">
+
+    <button type="button" class="btn btn-primary " onclick="return findfine();">Submit</button>
+</div>
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">x</button>
+                <h4 class="modal-title" id="modalTitle">Issue New Book</h4>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="lblEmpId">Book ID</label>
+                        <input type="text" class="form-control" id="bookid" placeholder="book ID"  />
+                    </div>
+                    <div class="form-group">
+                        <label for="lblName">User Id</label>
+                        <input type="text" class="form-control" id="userid" placeholder="userid" />
+                    </div>
+                   
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" id="btnAdd" onclick="return issuebook();">Add</button>
+                
+                <button type="button" class="btn btn-default" id="btnClose" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+@section scripts{
+
+    <script type="text/javascript">$(document).ready(function () {
+            LoadList();
+
+        });
+
+        function LoadList() {
+            $.ajax({
+                url: "https://localhost:5001/Library/getissuedbooks",
+                type: "GET",
+                dataType: "json",
+                contentType: "application/json;charset=utf-8",
+                success: function (result) {
+                    var html = "";
+                    $.each(result, function (key, item) {
+                        html += '<tr>';
+                        html += '<td>' + item.bookID + '</td>';
+                        html += '<td>' + item.userID + '</td>';
+                    
+                        html += '<td><a href="#" onclick="return Deletebook(' + item.bookID + ',' + item.userID+ ')">Return Book</a></td>';
+
+                        html += '</tr>';
+                    });
+
+                    $('#tbody').html(html);
+                },
+                error: function (errorMessage) {
+                    alert(errorMessage.responseText);
+                }
+            });
+        };
+
+        function issuebook() {
+
+            var inputObj = {
+                bookID: $('#bookid').val(),
+                userID: $('#userid').val(),
+
+            }
+            
+            $.ajax({
+                url: "https://localhost:5001/Library/issuebook/" + $('#bookid').val()+"-"+ $('#userid').val(),
+        
+                data: JSON.stringify(inputObj),
+                type: "POST",
+                dataType: "json",
+                contentType: "application/json;charset=utf-8",
+                complete: function (jqXHR) {
+                    if (jqXHR.readyState === 4) {
+                        LoadList();
+
+                        $('#myModal').modal('hide');
+                        $('body').removeClass('modal-open');
+                        $('.modal-backdrop').remove();
+                    }
+                },
+
+                error: function (errorMessage) {
+                    alert(errorMessage.responseText);
+                }
+            });
+
+        };
+        function ClearForm() {
+            $('#bookid').val("");
+            $('#userid').val("");
+
+        }
+
+
+        function Deletebook(bookid,userid) {
+            var res = confirm("Are you sure to delete the User record?");
+            if (res) {
+                $.ajax({
+                    url: "https://localhost:5001/Library/bookreturn/" + bookid + "-" + userid,
+                    type: "PUT",
+                    dataType: "json",
+                    contentType: "application/json;charset=utf-8",
+                    complete: function (jqXHR) {
+                        if (jqXHR.readyState === 4) {
+                            LoadList();
+                        }
+                    },
+
+                    error: function (errorMessage) {
+                        alert(errorMessage.responseText);
+                    }
+                });
+            }
+        }
+        function findfine() {
+            
+            
+                $.ajax({
+                    url: "https://localhost:5001/Library/finecalculator/" + $('#fbookid').val("") + "-" + $('#fuserid').val(""),
+                    type: "GET",
+                    dataType: "json",
+                    contentType: "application/json;charset=utf-8",
+                    success: function (result) {
+                        alert(result.responseText);
+                    },
+
+                    error: function (errorMessage) {
+                        alert(errorMessage.responseText);
+                    }
+                });
+            
+        }
+
+    </script>
+}

@@ -1,0 +1,306 @@
+﻿@{ ViewBag.Title = "Book"; }
+
+
+<div class="container">
+    <h2>Book Record</h2>
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" onclick="ClearForm();">Add New Book</button>
+    <p></p>
+    <div class="form-group">
+        
+
+       
+
+    </div>
+    <table class="table table-bordered table-hover">
+        <thead>
+            <tr>
+                <th>bookID</th>
+                <th>bookName</th>
+                <th>category</th>
+                <th>price</th>
+                <th>Author</th>
+                <th>Shelf_Number</th>
+                <th>Bookstatus</th>
+                <th>Edit</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody id="tbody"></tbody>
+    </table>
+</div>
+<div class="form-inline">
+   
+     <label >search Book By ID: </label>
+     <input type="text"  id="search">
+
+    <button type="button" class="btn btn-primary " onclick="return search();">Submit</button>
+</div>
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">x</button>
+                <h4 class="modal-title" id="modalTitle">Add Book</h4>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="lblEmpId">Book ID</label>
+                        <input type="text" class="form-control" id="bookid" placeholder="Book Id" />
+                    </div>
+                    <div class="form-group">
+                        <label for="lblName">Book Name</label>
+                        <input type="text" class="form-control" id="bookname" placeholder="BookName" />
+                    </div>
+                    <div class="form-group">
+                        <label for="lblAge">Category</label>
+                        <input type="text" class="form-control" id="category" placeholder="Category" />
+                    </div>
+                    <div class="form-group">
+                        <label for="lbleState">Price</label>
+                        <input type="text" class="form-control" id="price" placeholder="Price" />
+                    </div>
+                    <div class="form-group">
+                        <label for="lbleCountry">Shelf Number</label>
+                        <input type="text" class="form-control" id="shelfnumber" placeholder="Shelf Number" />
+                    </div>
+                    <div class="form-group">
+                        <label for="lbleCountry">Author</label>
+                        <input type="text" class="form-control" id="author" placeholder="Author" />
+                    </div>
+                    <div class="form-group">
+                        <label for="lbleCountry">Book Status</label>
+                        <input type="text" class="form-control" id="bookstatus" placeholder="Available/No_Available" />
+                    </div>
+                </form>
+            </div>
+            
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" id="btnAdd" onclick="return InsertBook();">Add</button>
+                <button type="button" class="btn btn-primary" id="btnUpdate" style="display:none" onclick="return UpdateBook();">Update</button>
+                <button type="button" class="btn btn-default" id="btnClose" data-dismiss="modal">Close</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+@section scripts{
+
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            LoadbookList();
+
+        });
+
+        function LoadbookList() {
+            $.ajax({
+                url: "https://localhost:5001/Library/getbooks",
+                
+                type: "GET",
+                dataType: "json",
+                contentType: "application/json;charset=utf-8",
+                success: function (result) {
+                    var html = "";
+                    $.each(result, function (key, item) {
+                        html += '<tr>';
+                        html += '<td>' + item.bookID + '</td>';
+                        html += '<td>' + item.bookName + '</td>';
+                        html += '<td>' + item.category + '</td>';
+                        html += '<td>' + item.price + '</td>';
+                        html += '<td>' + item.author + '</td>';
+                        html += '<td>' + item.shelfNumber + '</td>';
+                        html += '<td>' + item.bookStatus + '</td>';
+                        html += '<td><a href="#" onclick="return GetBookById( ' + item.bookID.toString()+')">Edit</a></td>';
+                        html += '<td><a href="#" onclick="return DeleteBook(' + item.bookID.toString() + ')">Delete</a></td>';
+                        html += '</tr>';
+                    });
+
+                    $('#tbody').html(html);
+                },
+                error: function (errorMessage) {
+                    alert(errorMessage.responseText);
+                }
+            });
+        };
+        function search() {
+            var searchbookid = $('#search').val();
+           
+            $.ajax({
+                url: "https://localhost:5001/Library/bookdetail/"+searchbookid,
+
+                type: "GET",
+                dataType: "json",
+                contentType: "application/json;charset=utf-8",
+                success: function (result) {
+                    var html = "";
+                    $.each(result, function (key, item) {
+                        html += '<tr>';
+                        html += '<td>' + item.bookID + '</td>';
+                        html += '<td>' + item.bookName + '</td>';
+                        html += '<td>' + item.category + '</td>';
+                        html += '<td>' + item.price + '</td>';
+                        html += '<td>' + item.author + '</td>';
+                        html += '<td>' + item.shelfNumber + '</td>';
+                        html += '<td>' + item.bookStatus + '</td>';
+                        html += '<td><a href="#" onclick="return GetBookById( ' + item.bookID.toString() + ')">Edit</a></td>';
+                        html += '<td><a href="#" onclick="return DeleteBook(' + item.bookID.toString() + ')">Delete</a></td>';
+                        html += '</tr>';
+                    });
+
+                    $('#tbody').html(html);
+                },
+                error: function (errorMessage) {
+                    alert(errorMessage.responseText);
+                }
+            });
+        };
+
+
+        function InsertBook() {
+         
+            var inputObj = {
+               bookID: $('#bookid').val(),
+                bookName: $('#bookname').val(),
+                category: $('#category').val(),
+                price: $('#price').val(),
+                shelfNumber : $('#shelfnumber').val(),
+               author: $('#author').val(),
+                bookStatus: $('#bookstatus').val()
+            }
+
+            $.ajax({
+                url: "https://localhost:5001/Library/addbook",
+                data: JSON.stringify(inputObj),
+                type: "POST",
+                dataType: "json",
+                contentType: "application/json;charset=utf-8",
+                complete: function (jqXHR) {
+                    if (jqXHR.readyState === 4) {
+                        LoadbookList();
+                      
+                        $('#myModal').modal('hide');
+                        $('body').removeClass('modal-open');
+                        $('.modal-backdrop').remove();
+                    }
+                },
+              
+                error: function (errorMessage) {
+                    alert(errorMessage.responseText);
+                }
+            });
+           
+        }
+
+        function GetBookById(bookId) {
+            $.ajax({
+             
+                url: "https://localhost:5001/Library/bookdetail/" + bookId,
+               
+                type: "GET",
+                dataType: "json",
+                contentType: "application/json;charset=utf-8",
+                success: function (result) {
+
+                    $.each(result, function (key, item) {
+                        $('#bookid').val(item.bookID);
+                        $('#bookname').val(item.bookName);
+                        $('#category').val(item.category);
+                        $('#price').val(item.price);
+                        $('#shelfnumber').val(item.shelfNumber);
+                        $('#author').val(item.author);
+                        $('#bookstatus').val(item.bookStatus);
+                    });
+                    $('#myModal').modal('show');
+                    $('#btnUpdate').show();
+                    $('#btnAdd').hide();
+                },
+                error: function (errorMessage) {
+                    alert(errorMessage.responseText);
+                }
+            });
+        }
+
+        function UpdateBook() {
+          
+            var inputObj = {
+                bookID: $('#bookid').val(),
+                bookName: $('#bookname').val(),
+                category: $('#category').val(),
+                price: $('#price').val(),
+                shelfNumber: $('#shelfnumber').val(),
+                author: $('#author').val(),
+                bookStatus: $('#bookstatus').val()
+            }
+
+            $.ajax({
+               
+                url: "https://localhost:5001/Library/updatebook/" + $('#bookid').val(),
+                data: JSON.stringify(inputObj),
+                type: "POST",
+                dataType: "json",
+                contentType: "application/json;charset=utf-8",
+                complete: function (jqXHR) {
+                    if (jqXHR.readyState === 4) {
+                        LoadbookList();
+                        $('#myModal').modal('hide');
+
+                        $('#bookid').val(""),
+                            $('#bookname').val(""),
+                            $('#category').val(""),
+                            $('#price').val(""),
+                            $('#author').val("")
+                        $('#bookstatus').val("")
+                        $('#shelfnumber').val("")
+                    }
+                },
+                
+                error: function (errorMessage) {
+                    alert(errorMessage.responseText);
+                }
+            });
+        }
+
+        function DeleteBook( bookId) {
+            var res = confirm("Are you sure to delete the book record?");
+            if (res) {
+                $.ajax({
+                    url: "https://localhost:5001/Library/DeleteBook/" + bookId,
+                    type: "GET",
+                    dataType: "json",
+                    contentType: "application/json;charset=utf-8",
+                    complete: function (jqXHR) {
+                        if (jqXHR.readyState === 4) {
+                            LoadbookList();
+                        }
+                    },
+                    
+                    error: function (errorMessage) {
+                        alert(errorMessage.responseText);
+                    }
+                });
+            }
+        }
+
+
+        function ClearForm() {
+            $('#bookid').val("");
+            $('#bookname').val("");
+            $('#price').val("");
+            $('#category').val("");
+            $('#shelfnumber').val("");
+
+            $('#author').val("");
+            $('#bookstatus').val("");
+           
+
+            $('#btnUpdate').hide();
+            $('#btnAdd').show();
+        }
+
+    </script>
+}
